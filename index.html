@@ -59,6 +59,37 @@
             transform: scale(1.05);
         }
 
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -131,8 +162,10 @@
                     with a modern interface and smooth navigation.
                     <br>
                     <div class="slideshow-container" id="ecelle-shoppe">
-                        <img src="https://mawjustin.github.io/portfolio/img/ecelle-shoppe-1.png" alt="Ecelle Shoppe Image 1" class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/ecelle-shoppe-2.png" alt="Ecelle Shoppe Image 2" class="project-img slide fade">
+                        <img src="https://mawjustin.github.io/portfolio/img/ecelle-shoppe-1.png"
+                            alt="Ecelle Shoppe Image 1" class="project-img slide fade" onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/ecelle-shoppe-2.png"
+                            alt="Ecelle Shoppe Image 2" class="project-img slide fade" onclick="openModal(this)">
                     </div>
                 </li>
                 <li>
@@ -142,9 +175,12 @@
                     and academic growth.
                     <br>
                     <div class="slideshow-container" id="jrw-visions">
-                        <img src="https://mawjustin.github.io/portfolio/img/jrw-visions-1.png" alt="JRW Visions Image 1" class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/jrw-visions-2.png" alt="JRW Visions Image 2" class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/jrw-visions-3.png" alt="JRW Visions Image 3" class="project-img slide fade">
+                        <img src="https://mawjustin.github.io/portfolio/img/jrw-visions-1.png" alt="JRW Visions Image 1"
+                            class="project-img slide fade" onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/jrw-visions-2.png" alt="JRW Visions Image 2"
+                            class="project-img slide fade" onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/jrw-visions-3.png" alt="JRW Visions Image 3"
+                            class="project-img slide fade" onclick="openModal(this)">
                     </div>
                 </li>
                 <li>
@@ -153,8 +189,10 @@
                     analytics and market trends.
                     <br>
                     <div class="slideshow-container" id="price-consult">
-                        <img src="https://mawjustin.github.io/portfolio/img/price-consult-1.png" alt="Price Consult Image 1" class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/price-consult-2.png" alt="Price Consult Image 2" class="project-img slide fade">
+                        <img src="https://mawjustin.github.io/portfolio/img/price-consult-1.png"
+                            alt="Price Consult Image 1" class="project-img slide fade" onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/price-consult-2.png"
+                            alt="Price Consult Image 2" class="project-img slide fade" onclick="openModal(this)">
                     </div>
                 </li>
                 <li>
@@ -163,8 +201,10 @@
                     it ensures a seamless and unforgettable experience.
                     <br>
                     <div class="slideshow-container" id="summer-wind">
-                        <img src="https://mawjustin.github.io/portfolio/img/summer-wind-1.png" alt="Summer Wind Image 1" class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/summer-wind-2.png" alt="Summer Wind Image 2" class="project-img slide fade">
+                        <img src="https://mawjustin.github.io/portfolio/img/summer-wind-1.png" alt="Summer Wind Image 1"
+                            class="project-img slide fade" onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/summer-wind-2.png" alt="Summer Wind Image 2"
+                            class="project-img slide fade" onclick="openModal(this)">
                     </div>
                 </li>
                 <li>
@@ -173,8 +213,10 @@
                     to find and book accommodations, catering specifically to local travelers and hosts.
                     <br>
                     <div class="slideshow-container" id="vacacio">
-                        <img src="https://mawjustin.github.io/portfolio/img/vacacio-1.png" alt="Vacacio Image 1" class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/vacacio-2.png" alt="Vacacio Image 2" class="project-img slide fade">
+                        <img src="https://mawjustin.github.io/portfolio/img/vacacio-1.png" alt="Vacacio Image 1"
+                            class="project-img slide fade" onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/vacacio-2.png" alt="Vacacio Image 2"
+                            class="project-img slide fade" onclick="openModal(this)">
                     </div>
                 </li>
                 <li>
@@ -182,10 +224,12 @@
                     institution offering top-tier medical services and patient care.
                     <br>
                     <div class="slideshow-container" id="pdh">
-                        <img src="https://mawjustin.github.io/portfolio/img/pdh-1.png" alt="Parañaque Doctors Hospital Image 1"
-                            class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/pdh-2.png" alt="Parañaque Doctors Hospital Image 2"
-                            class="project-img slide fade">
+                        <img src="https://mawjustin.github.io/portfolio/img/pdh-1.png"
+                            alt="Parañaque Doctors Hospital Image 1" class="project-img slide fade"
+                            onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/pdh-2.png"
+                            alt="Parañaque Doctors Hospital Image 2" class="project-img slide fade"
+                            onclick="openModal(this)">
                     </div>
                 </li>
                 <li>
@@ -194,8 +238,10 @@
                     customers to book appointments and explore various massage therapies.
                     <br>
                     <div class="slideshow-container" id="lotus-massage">
-                        <img src="https://mawjustin.github.io/portfolio/img/lotus-massage-1.png" alt="Lotus Massage Image 1" class="project-img slide fade">
-                        <img src="https://mawjustin.github.io/portfolio/img/lotus-massage-2.png" alt="Lotus Massage Image 2" class="project-img slide fade">
+                        <img src="https://mawjustin.github.io/portfolio/img/lotus-massage-1.png"
+                            alt="Lotus Massage Image 1" class="project-img slide fade" onclick="openModal(this)">
+                        <img src="https://mawjustin.github.io/portfolio/img/lotus-massage-2.png"
+                            alt="Lotus Massage Image 2" class="project-img slide fade" onclick="openModal(this)">
                     </div>
                 </li>
             </ul>
@@ -227,10 +273,27 @@
         </section>
     </div>
 
+    <!-- Modal -->
+    <div id="imgModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
     <footer>
         <p>&copy; 2025 Justin Daryll Paclar. All Rights Reserved.</p>
     </footer>
     <script>
+        function openModal(img) {
+            const modal = document.getElementById("imgModal");
+            const modalImg = document.getElementById("modalImg");
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+        }
+
+        function closeModal() {
+            document.getElementById("imgModal").style.display = "none";
+        }
+
         document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll(".slideshow-container").forEach(container => {
                 let slideIndex = 0;
