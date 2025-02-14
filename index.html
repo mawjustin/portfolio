@@ -1,75 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background: #333;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
             color: #fff;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
+
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             overflow: hidden;
+            padding: 20px 0;
         }
+
         .section {
             background: #fff;
-            padding: 20px;
+            padding: 30px;
             margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        .project-img {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-img:hover {
+            transform: scale(1.05);
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background: #333;
             color: white;
             margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #6e8efb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .fade {
+            animation: fadeEffect 1.5s ease-in-out;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0.4;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Frontend & Backend</p>
+        <h1>Justin Daryll Paclar</h1>
+        <p>Web & System Applications Developer | Frontend & Backend</p>
     </header>
-    
+
     <div class="container">
         <section class="section">
             <h2>About Me</h2>
-            <p>I'm a passionate web developer with experience in HTML, CSS, JavaScript, and backend technologies.</p>
+            <p>I am a web & system applications developer with expertise in both frontend and backend technologies. I
+                specialize in PHP development and have extensive experience working with databases. My skill sets allow
+                me to build dynamic and interactive web applications. I am passionate about creating efficient,
+                scalable, and user-friendly solutions tailored to business needs.</p>
         </section>
-        
+
         <section class="section">
-            <h2>Projects</h2>
+            <h2>Website Projects</h2>
             <ul>
-                <li><strong>Project 1:</strong> Description of project 1</li>
-                <li><strong>Project 2:</strong> Description of project 2</li>
-                <li><strong>Project 3:</strong> Description of project 3</li>
+                <li>
+                    <strong>Ecelle Shoppe:</strong> Ecelle Shoppe is an elegant and user-friendly e-commerce website
+                    that offers a wide range of high-quality beauty products. It provides a seamless shopping experience
+                    with a modern interface and smooth navigation.
+                    <br>
+                    <div class="slideshow-container" id="ecelle-shoppe">
+                        <img src="img/ecelle-shoppe-1.png" alt="Ecelle Shoppe Image 1" class="project-img slide fade">
+                        <img src="img/ecelle-shoppe-2.png" alt="Ecelle Shoppe Image 2" class="project-img slide fade">
+                    </div>
+                </li>
+                <li>
+                    <strong>JRW Visions:</strong> JRW Visions is a community-focused initiative aimed at empowering
+                    youth and low-income families. Through educational programs, subsidized nutrition initiatives, and
+                    city field trips, it strives to create equal opportunities and a supportive environment for personal
+                    and academic growth.
+                    <br>
+                    <div class="slideshow-container" id="jrw-visions">
+                        <img src="img/jrw-visions-1.png" alt="JRW Visions Image 1" class="project-img slide fade">
+                        <img src="img/jrw-visions-2.png" alt="JRW Visions Image 2" class="project-img slide fade">
+                        <img src="img/jrw-visions-3.png" alt="JRW Visions Image 3" class="project-img slide fade">
+                    </div>
+                </li>
+                <li>
+                    <strong>Price Consult:</strong> Price Consult is a data-driven platform that provides real-time
+                    pricing insights for businesses. It helps companies make informed pricing decisions through advanced
+                    analytics and market trends.
+                    <br>
+                    <div class="slideshow-container" id="price-consult">
+                        <img src="img/price-consult-1.png" alt="Price Consult Image 1" class="project-img slide fade">
+                        <img src="img/price-consult-2.png" alt="Price Consult Image 2" class="project-img slide fade">
+                    </div>
+                </li>
+                <li>
+                    <strong>Summer Wind:</strong> Summer Wind is a premium travel and tours service that offers curated
+                    vacation packages for adventurous travelers. From tropical beach getaways to cultural explorations,
+                    it ensures a seamless and unforgettable experience.
+                    <br>
+                    <div class="slideshow-container" id="summer-wind">
+                        <img src="img/summer-wind-1.png" alt="Summer Wind Image 1" class="project-img slide fade">
+                        <img src="img/summer-wind-2.png" alt="Summer Wind Image 2" class="project-img slide fade">
+                    </div>
+                </li>
+                <li>
+                    <strong>Vacacio:</strong> Vacacio is a rental marketplace designed exclusively for the Philippines,
+                    offering a platform similar to Airbnb and Booking.com. It provides users with a seamless experience
+                    to find and book accommodations, catering specifically to local travelers and hosts.
+                    <br>
+                    <div class="slideshow-container" id="vacacio">
+                        <img src="img/vacacio-1.png" alt="Vacacio Image 1" class="project-img slide fade">
+                        <img src="img/vacacio-2.png" alt="Vacacio Image 2" class="project-img slide fade">
+                    </div>
+                </li>
+                <li>
+                    <strong>Parañaque Doctors Hospital:</strong> Parañaque Doctors Hospital is a premier healthcare
+                    institution offering top-tier medical services and patient care.
+                    <br>
+                    <div class="slideshow-container" id="pdh">
+                        <img src="img/pdh-1.png" alt="Parañaque Doctors Hospital Image 1"
+                            class="project-img slide fade">
+                        <img src="img/pdh-2.png" alt="Parañaque Doctors Hospital Image 2"
+                            class="project-img slide fade">
+                    </div>
+                </li>
+                <li>
+                    <strong>Lotus Massage:</strong> Lotus Massage is a premium home and hotel massage service in Riyadh,
+                    offering top-quality relaxation and wellness treatments. The website provides an easy way for
+                    customers to book appointments and explore various massage therapies.
+                    <br>
+                    <div class="slideshow-container" id="lotus-massage">
+                        <img src="img/lotus-massage-1.png" alt="Lotus Massage Image 1" class="project-img slide fade">
+                        <img src="img/lotus-massage-2.png" alt="Lotus Massage Image 2" class="project-img slide fade">
+                    </div>
+                </li>
             </ul>
         </section>
-        
+
+        <section class="section">
+            <h2>System Projects</h2>
+            <ul>
+                <li>
+                    <strong>Payroll System:</strong> A comprehensive payroll management system ensuring accurate salary
+                    computation and record-keeping.
+                </li>
+                <li>
+                    <strong>Queuing System:</strong> An automated queuing system designed to improve customer service
+                    efficiency in various industries.
+                </li>
+                <li>
+                    <strong>Thesis Development Assistance:</strong> A system designed to help students manage and
+                    streamline their thesis projects effectively.
+                </li>
+            </ul>
+        </section>
+
         <section class="section">
             <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="#">Your Profile</a></p>
-            <p>GitHub: <a href="#">Your Profile</a></p>
+            <p>Email: pjustindaryll@gmail.com</p>
+            <!--<p>LinkedIn: <a href="#">Your Profile</a></p>
+            <p>GitHub: <a href="#">Your Profile</a></p>-->
         </section>
     </div>
-    
+
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Justin Daryll Paclar. All Rights Reserved.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".slideshow-container").forEach(container => {
+                let slideIndex = 0;
+                const slides = container.querySelectorAll(".slide");
+
+                function showSlide(index) {
+                    slides.forEach(slide => slide.style.display = "none");
+                    slides[index].style.display = "block";
+                }
+
+                function nextSlide() {
+                    slideIndex = (slideIndex + 1) % slides.length;
+                    showSlide(slideIndex);
+                }
+
+                if (slides.length > 0) {
+                    showSlide(slideIndex);
+
+                    container.addEventListener("mouseenter", () => {
+                        container.slideInterval = setInterval(nextSlide, 2000);
+                    });
+
+                    container.addEventListener("mouseleave", () => {
+                        clearInterval(container.slideInterval);
+                    });
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showSlides("ecelle-shoppe");
+            showSlides("jrw-visions");
+            showSlides("price-consult");
+            showSlides("summer-wind");
+            showSlides("vacacio");
+            showSlides("pdh");
+            showSlides("lotus-massage");
+        });
+    </script>
 </body>
+
 </html>
